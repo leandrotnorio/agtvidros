@@ -1,4 +1,6 @@
 'use client';
+
+import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import React from 'react';
 import Carousel from '../components/ui/Carousel.jsx';
@@ -65,35 +67,24 @@ export default function HomePage() {
 
       {/* HERO com imagem de fundo profissional */}
       <div className=" bg-gray-100 relative mt-[30px] xs:mt-[50px]  sm:mt-[40px] flex items-center justify-center text-center  h-[550px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
-        <div className="relative py-[4rem] z-10 mr-[100px] flex flex-col items-start gap-6 sm:max-w-xl">
-  <h1 className="text-[25px] mb-2 xs:text-[30px] sm:text-[60px] font-medium text-blue-700">
-    Soluções em Vidro para Seu Projeto
-  </h1>
-  <p className="text-gray-700 text-lg sm:text-xl font-semibold">
-    Qualidade, segurança e design para transformar seus ambientes com elegância e sofisticação.
-  </p>
-
-  <div className="bg-white shadow-xl rounded-2xl p-6 mt-4 flex flex-col sm:flex-row sm:items-center gap-4 w-full sm:w-auto">
-    <div className="flex-1">
-      <h2 className="text-lg font-bold text-blue-700 mb-2">
-        Atendimento Personalizado
-      </h2>
-      <p className="text-gray-600 text-sm sm:text-base">
-        Nossa equipe oferece soluções sob medida, garantindo a melhor experiência para cada projeto.
-      </p>
-    </div>
-    <ButtonPrimary className="self-start sm:self-auto" />
-  </div>
-</div>
-
-<div className="flex-1 w-full max-w-[800px]">
-    <img
-      src="/imgs/img-1.jpg" 
-      alt="Vidro em Projeto"
-      className="w-full h-auto object-cover rounded-2xl shadow-lg"
-    />
-  </div>
-
+        <div className="relative py-[4rem] z-10 mr-[100px] flex flex-col items-start gap-5 sm:max-w-xl">
+          <h1 className="text-[20px] mb-2 xs:text-[30px] sm:text-[60px] font-medium text-blue-700 text-left">
+            Soluções de Vidros para Seu Projeto
+          </h1>
+          <p className="text-gray-700 text-lg sm:text-xl font-semibold text-left">
+            Qualidade, segurança e design para transformar seus ambientes com elegância e sofisticação.
+          </p>
+          <ul className="space-y-2 text-gray-700 text-left sm:text-lg font-medium">
+            <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Mais de 36 anos de experiência</li>
+            <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Acabamento impecável</li>
+            <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Instalação profissional</li>
+            <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Conformidade com as normas de segurança</li>
+          </ul>
+          <ButtonPrimary />
+        </div>
+        <div className="flex-1 w-full max-w-[800px]">
+          <img src="/imgs/img-1.jpg" alt="Vidro em Projeto" className="w-full h-auto object-cover rounded-2xl shadow-lg"/>
+        </div>
       </div>
 
       {/* Seção Obras */}
