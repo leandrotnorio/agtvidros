@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+import ButtonPrimary from './Buttonprimary'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -19,7 +20,7 @@ export default function Navbar() {
     { name: 'Nossos Serviços', href: '/services' },
     { name: 'Produtos', href: '/products' },
     { name: 'Tecnologias', href: '#tecnologias' },
-    { name: 'Sobre nós', href: '/about' },
+    { name: 'Sobre', href: '/about' },
     { name: 'Contato', href: '#contato' },
   ]
 
@@ -70,15 +71,15 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-blue-700 shadow-md w-full fixed z-40 transition-transform duration-300 ${
+      className={`bg-white shadow-md w-full fixed z-40 transition-transform duration-300 ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
+      <div className=" px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-[4rem] items-center">
           {/* Logo */}
           <Link href="/">
-            <Image src={logoagt} alt="Logo" width={150} height={40} priority/>
+            <h1 className="font-semibold text-blue-800 text-[25px]" >AGT</h1>
           </Link>
 
           {/* Botão Mobile */}
@@ -103,12 +104,13 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-red-700 text-white transition"
+                className="hover:text-red-700 font-bold text-gray-500 transition"
               >
                 {item.name}
               </Link>
             ))}
           </div>
+          <ButtonPrimary/>
         </div>
       </div>
 
