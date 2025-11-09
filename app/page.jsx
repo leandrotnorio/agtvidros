@@ -74,7 +74,7 @@ export default function HomePage() {
           <p className="text-gray-700 text-lg sm:text-xl font-semibold text-left">
             Qualidade, segurança e design para transformar seus ambientes com elegância e sofisticação.
           </p>
-          <ul className="space-y-2 text-gray-700 text-left sm:text-lg font-medium">
+          <ul className="space-y-2 text-gray-700 text-left sm:text-lg font-medium pb-6">
             <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Mais de 36 anos de experiência</li>
             <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Acabamento impecável</li>
             <li className="flex items-center gap-2"><CheckCircleIcon className="w-5 h-5 text-blue-700 flex-shrink-0" />Instalação profissional</li>

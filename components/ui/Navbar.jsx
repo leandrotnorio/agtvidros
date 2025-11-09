@@ -75,7 +75,7 @@ export default function Navbar() {
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className=" px-2 sm:px-6 lg:px-8">
+      <div className=" px-2 sm:px-6 lg:px-16 py-2">
         <div className="flex justify-between h-[4rem] items-center">
           {/* Logo */}
           <Link href="/">
