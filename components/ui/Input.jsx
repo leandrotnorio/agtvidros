@@ -1,6 +1,6 @@
 // Cadastro.js
 import React, { useState } from 'react';
-import ButtonSecundary from './Buttonsecundary';
+import ButtonSecundary from './ButtonSecundary';
 
 const Cadastro = () => {
   const [name, setName] = useState('');

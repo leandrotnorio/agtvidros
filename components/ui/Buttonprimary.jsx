@@ -3,7 +3,7 @@ function Button({link, children}){
         <button><a href={link} // Usando o link diretamente na tag <a>
       target="_blank" // Abre o link em uma nova aba
       rel="noopener noreferrer" // Segurança ao abrir link em nova aba
-      className="px-4 py-1 mb-8 bg-blue-600 text-[15px] font-bold text-white rounded hover:bg-blue-700 transition">
+      className="px-4 py-1 mb-8 bg-blue-800 text-[15px] font-bold text-white rounded hover:bg-gray-400 transition">
         {children}
         </a></button>
     )
