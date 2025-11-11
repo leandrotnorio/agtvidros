@@ -7,9 +7,11 @@ import Input from '../components/ui/Input.jsx';
 import Features from '../components/ui/Feature.jsx';
 import CardPrimary from '@/components/ui/SectionPrimary.jsx';
 import { Home, Droplets, Grid, DoorClosed, PanelsTopLeft, LayoutGrid } from 'lucide-react';
-import ServicosSection from '@/components/ui/ServicesSection.jsx';
 import PrimarySetion from '@/components/ui/SectionPrimary.jsx';
+import ServicosSection from '@/components/ui/ServicesSection.jsx';
 import ProjetosSection from '@/components/ui/ProjectsSection.jsx';
+import ContactSection from '@/components/ui/ContactSection.jsx';
+import AboutSection from '@/components/ui/AboutSection.jsx';
 
 
 const servicos = [
@@ -109,12 +111,14 @@ export default function HomePage() {
 
       {/* seção principal com imagem profissional */}
         <PrimarySetion/>
-      {/* Seção Nossos Seriços */}
+      {/* Seção Nossos Serviços */}
         <ServicosSection/>
-      {/* Formulário de cadastro */}
-      <ProjetosSection/>
       {/* Filtragem de projetos */}
-        <Input/>
+      <ProjetosSection/>
+      {/* Sobre a empresa */}
+      <AboutSection/>
+      {/* Formulário de cadastro */}
+      <ContactSection/>
       {/* Icones de autoridade */}
         <Features/>
     </section>
