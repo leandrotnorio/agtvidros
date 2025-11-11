@@ -3,7 +3,6 @@
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import React from 'react';
-import Input from '../components/ui/Input.jsx';
 import Features from '../components/ui/Feature.jsx';
 import CardPrimary from '@/components/ui/SectionPrimary.jsx';
 import { Home, Droplets, Grid, DoorClosed, PanelsTopLeft, LayoutGrid } from 'lucide-react';
@@ -12,6 +11,7 @@ import ServicosSection from '@/components/ui/ServicesSection.jsx';
 import ProjetosSection from '@/components/ui/ProjectsSection.jsx';
 import ContactSection from '@/components/ui/ContactSection.jsx';
 import AboutSection from '@/components/ui/AboutSection.jsx';
+import CustomersSection from '@/components/ui/CustomersSection.jsx';
 
 
 const servicos = [
@@ -117,6 +117,8 @@ export default function HomePage() {
       <ProjetosSection/>
       {/* Sobre a empresa */}
       <AboutSection/>
+      {/* Princípais clientes */}
+      <CustomersSection/>
       {/* Formulário de cadastro */}
       <ContactSection/>
       {/* Icones de autoridade */}
