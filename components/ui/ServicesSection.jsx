@@ -9,7 +9,7 @@ const servicos = [
     titulo: 'Janelas e Portas',
     descricao: 'Janelas e portas de vidro temperado com design moderno e alta durabilidade.',
     imagem: '/imgs/img-janelaseportas.jpg',
-    icone: Home,
+    icone: DoorClosed,
   },
   {
     titulo: 'Box para Banheiro',
@@ -47,21 +47,21 @@ const servicos = [
 export default function ServicosSection(){
 
     return(
-<section>
-  <div className="max-w-7xl mx-auto px-6 py-12 text-center">
+<section className='py-14 bg-white'>
+  <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-[40px] font-medium text-blue-800 mb-3">Nossos Serviços</h2>
         <p className="text-gray-700 font-bold mb-12">
           Oferecemos uma ampla gama de soluções em vidro para atender todas as suas necessidades.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
           {servicos.map((servico, index) => {
             const Icone = servico.icone;
             return (
               <div
                 key={index}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03]">
-                <div className="relative h-60 w-full">
+                <div className="relative h-64 w-full">
                   <Image
                     src={servico.imagem}
                     alt={servico.titulo}

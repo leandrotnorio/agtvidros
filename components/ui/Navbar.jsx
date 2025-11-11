@@ -104,7 +104,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="hover:text-red-700 font-bold text-gray-500 transition"
+                className="hover:text-blue-800 font-bold text-gray-500 transition"
               >
                 {item.name}
               </Link>

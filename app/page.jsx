@@ -7,9 +7,9 @@ import Input from '../components/ui/Input.jsx';
 import Features from '../components/ui/Feature.jsx';
 import CardPrimary from '@/components/ui/SectionPrimary.jsx';
 import { Home, Droplets, Grid, DoorClosed, PanelsTopLeft, LayoutGrid } from 'lucide-react';
-import ServicosSection from '@/components/ui/ServicosSection.jsx';
+import ServicosSection from '@/components/ui/ServicesSection.jsx';
 import PrimarySetion from '@/components/ui/SectionPrimary.jsx';
-import ProjetosSection from '@/components/ui/ProjetosSection.jsx';
+import ProjetosSection from '@/components/ui/ProjectsSection.jsx';
 
 
 const servicos = [
