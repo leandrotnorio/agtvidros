@@ -18,9 +18,9 @@ export default function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Serviços', href: '#services' },
-    /*{ name: 'Produtos', href: '/products' },*/
-    /*{ name: 'Tecnologias', href: '#tecnologias' },*/
-    { name: 'Sobre', href: '#about' },
+    //{ name: 'Produtos', href: '/products' },
+    //{ name: 'Tecnologias', href: '#tecnologias' },
+    { name: 'Sobre Nós', href: '#about' },
     { name: 'contato', href: '#contato' },
   ]
 
