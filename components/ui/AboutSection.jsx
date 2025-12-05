@@ -4,7 +4,7 @@ import { Award, Users, Clock, ThumbsUp, CheckCircle } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-white">
+    <section id='about' className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Conteúdo à esquerda */}
         <div>

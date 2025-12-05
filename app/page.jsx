@@ -55,55 +55,8 @@ const servicos = [
 
 
 
-const backgroundimage = '/guardacorpoescada.png'
 
-const imagesbussines = [
-  '/itaulogo.avif',
-  '/carrefourlogo.svg',
-  '/riachuelo.svg',
-  '/habibslogo.svg',
-  '/o-boticario.svg',
-  '/worldtennis.png'
-];
 
-const images = [
-  '/esquadria.jpg',
-  '/faxada.jpg',
-  '/guardacorpoescada.png',
-  '/portadacaixa.jpg',
-  '/janela.jpg'
-];
-
-const testmonials = [
-  {
-    name: "Leandro Tenorio",
-    date: "07/10/2024",
-    stars: 5,
-    message: "Excelente serviço, muito satisfeito!",
-    image: "/fotoperfil.jpg",
-  },
-  {
-    name: "Maria Silva",
-    date: "05/09/2024",
-    stars: 4,
-    message: "Muito bom, mas poderia melhorar o atendimento.",
-    image: "/fotoperfil.jpg",
-  },
-  {
-    name: "Carlos Souza",
-    date: "12/08/2024",
-    stars: 5,
-    message: "Atendimento ótimo, recomendo!",
-    image: "/fotoperfil.jpg",
-  },
-  {
-    name: "João Oliveira",
-    date: "22/07/2024",
-    stars: 4,
-    message: "Bom, mas poderia ter mais opções.",
-    image: "/fotoperfil.jpg",
-  },
-];
 
 export default function HomePage() {
   return (
@@ -121,8 +74,8 @@ export default function HomePage() {
       <CustomersSection/>
       {/* Formulário de cadastro */}
       <ContactSection/>
-      {/* Icones de autoridade */}
-        <Features/>
+      {/* Icones de autoridade*/}
+        {/*<Features/>*/}
     </section>
   );
 }

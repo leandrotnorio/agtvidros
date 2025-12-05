@@ -17,11 +17,11 @@ export default function Navbar() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Nossos Serviços', href: '/services' },
-    { name: 'Produtos', href: '/products' },
-    { name: 'Tecnologias', href: '#tecnologias' },
-    { name: 'Sobre', href: '/about' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Serviços', href: '#services' },
+    /*{ name: 'Produtos', href: '/products' },*/
+    /*{ name: 'Tecnologias', href: '#tecnologias' },*/
+    { name: 'Sobre', href: '#about' },
+    { name: 'contato', href: '#contato' },
   ]
 
   useEffect(() => {
